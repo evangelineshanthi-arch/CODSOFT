@@ -20,6 +20,8 @@ def chatbot_response(user_input):
     elif "date" in text:
         today = datetime.now().strftime("%d-%m-%Y")
         return f"Today's date is {today}."
+    elif "ai" in text:
+        return "AI stands for Artificial Intelligence."
 
     elif "help" in text:
         return "I can chat about greetings, my name, time, date, jokes, and more. Try asking!"
